@@ -1,1 +1,11 @@
+def create_new_string(input_string):
+    if len(input_string) >= 4:
+        new_string = input_string[:2] + input_string[-2:]
+        return new_string
+    else:
+        return "Input string should be at least 4 characters long."
 
+input_string = input("Enter a string: ")
+
+result = create_new_string(input_string)
+print("New string:", result)
